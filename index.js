@@ -6,7 +6,7 @@ function searchRepositories () {
   $.get(`https://api.github.com/search/repositories?q=${document.getElementById('searchTerms').value}`, function(data) {
 
     for (const x of data.items) {
-      console.log(x)
+
       $('#results').append(`<div>${x.name}, <a href="#" data-repository="${x.name}" onclick="showCommits(this)">Show Commits</a></div>`)
     }
   })
