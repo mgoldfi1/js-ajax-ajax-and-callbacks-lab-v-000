@@ -13,7 +13,7 @@ function searchRepositories () {
 }
 
 function showCommits(el) {
-  console.log(el.data.repository.name)
+  console.log(el.dataset.repository)
   $.get(`https://api.github.com/repos/chvin/react-tetris/commits`, function(data){
 
   })
