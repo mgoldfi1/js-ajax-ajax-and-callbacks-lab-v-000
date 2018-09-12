@@ -1,2 +1,2 @@
-$(document).ready(function (searchRepositories){
+$(document).ready(function searchRepositories (){
 });
