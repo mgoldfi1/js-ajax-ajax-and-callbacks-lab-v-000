@@ -12,6 +12,6 @@ function searchRepositories () {
 }
 
 function showCommits(el) {
-  console.log(el)
+  console.log(el.dataset.respository)
 
 }
