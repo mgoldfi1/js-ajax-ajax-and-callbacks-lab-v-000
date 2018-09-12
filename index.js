@@ -16,7 +16,7 @@ function showCommits(el) {
   $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, function(data){
     console.log(data)
   for (const x of data)
-    $('#details').append(`<div>SHA:${x.sha},NAME:${x.commit.author.name}, login: ${x.author.login}</div>`)
+    $('#details').append(`<div>SHA:${x.sha},NAME:${x.commit.author.name}, login: ${x.author.login} <img src="${x.author.avatar_url}"></div>`)
   })
 
 }
