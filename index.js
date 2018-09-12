@@ -22,6 +22,5 @@ function showCommits(el) {
 }
 
 function displayError () {
-  function(error) {
     $('#errors').append("I'm sorry, there's been an error. Please try again.")
 }
