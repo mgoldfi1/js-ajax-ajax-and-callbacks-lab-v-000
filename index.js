@@ -1,5 +1,5 @@
 $(document).ready(function  (){
-  searchRepositories()
+  return searchRepositories()
 });
 
 function searchRepositories () {
