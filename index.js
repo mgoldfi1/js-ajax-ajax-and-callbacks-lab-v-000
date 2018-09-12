@@ -7,7 +7,7 @@ function searchRepositories () {
 
     for (const x of data.items) {
 
-      $('#results').append(`<div>${x.name}, <a href="#" data-repository="${x.name}" onclick="showCommits(this)">Show Commits</a></div>`)
+      $('#results').append(`<div>${x.name}, <a href="#" data-repository="${x.name}" data-owner="${x.owner.login}" onclick="showCommits(this)">Show Commits</a></div>`)
     }
   })
 }
