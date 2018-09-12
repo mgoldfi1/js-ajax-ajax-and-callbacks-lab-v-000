@@ -17,6 +17,8 @@ function showCommits(el) {
     console.log(data)
   for (const x of data)
     $('#details').append(`<div>SHA:${x.sha},NAME:${x.commit.author.name}, login: ${x.author.login} <img src="${x.author.avatar_url}"></div>`)
+  }).fail(function(error) {
+    $('#errors').append("I'm sorry, there's been an error. Please try again.")
   })
 
 }
